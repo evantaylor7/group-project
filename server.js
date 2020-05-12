@@ -6,7 +6,7 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 const path = require('path')
 
-const port = process.env.PORT || 9000
+const port = process.env.PORT
 
 const auth = require('./routes/userAuth');
 const getPosts = require('./routes/getPosts')
@@ -19,6 +19,7 @@ const votes = require('./routes/votes');
 const users = require('./routes/users');
 
 const dbURL = 'mongodb://localhost:27017/photo-share'
+const secret = process.env.SECRET || "something wicked this way comes"
 
 require('dotenv').config();
 
@@ -43,7 +44,7 @@ app.use('/auth', auth);
 app.use('/posts', getPosts)
 app.use('/profile', getProfile)
 app.use('/comments', getComments)
-app.use('/api', expressJWT({ secret: process.env.SECRET }));
+app.use('/api', expressJWT({ secret: secret }));
 app.use('/api/posts', posts);
 app.use('/api/vote', votes);
 app.use('/api/profile', profile)
