@@ -1,0 +1,1133 @@
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.App {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    transition: border .3s;
+    outline: none
+}
+
+.button:hover {
+    border: solid rgb(112, 112, 112) 1px;
+    cursor: pointer
+}
+
+.button:active {
+    background-color: rgb(116, 154, 177);
+    box-shadow: 2px 2px rgb(182, 182, 182);
+    transform: translateY(2px);
+}
+
+.input {
+    padding: 16px;
+    border-radius: 5px;
+    resize: none;
+    border: solid rgb(112, 112, 112) 1px;
+    outline: none;
+    background-color: whitesmoke
+}
+
+.input:focus {
+    background-color: white;
+}
+
+
+.custom-confirm {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+    padding: 20px;
+    border: solid rgb(224, 224, 224) 1px;
+    border-radius: 10px;
+    animation: 0.5s 0.2s forwards;
+    color: rgb(53, 53, 53);
+    text-align: center
+}
+
+.custom-confirm > p {
+    margin: 20px 0
+}
+
+.custom-confirm > button {
+    margin: 0 10px;
+    height: 30px;
+    width: 50px
+}
+
+/* auth */
+.auth-page-container {
+    padding-top: 50px;
+}
+
+.auth-page {
+    border: solid rgb(224, 224, 224) 1px;
+    width: 702px;
+    background-color: white;
+    margin: auto;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.auth-container {
+    margin-top: 20px;
+}
+
+.auth-form {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.auth-form > input {
+    border-radius: 4px;
+    margin: 3px;
+    background-color: whitesmoke;
+    outline: none;
+    padding: 4px;
+    border: none;
+    border-bottom: solid rgb(116, 154, 177) 2px;
+    border-right: solid rgb(116, 154, 177) 2px;
+}
+
+.auth-form > input:focus {
+    background-color: white;
+    border-left: solid whitesmoke 1px;
+    border-top: solid whitesmoke 1px
+}
+
+.auth-button {
+    height: 23px
+}
+
+.auth-toggle-button {
+    margin-left: 8px
+}
+
+/* nav */
+.nav {
+    border: solid rgb(224, 224, 224) 1px;
+    background-color: white;
+    padding: 8px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav-box {
+    width: 702px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 2px
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 13pt;
+    color: black;
+    margin-right: 30px;
+    transition: .3s
+}
+
+.nav-link:hover {
+    color: rgb(116, 154, 177)
+}
+
+.nav-user {
+    display: flex;
+}
+
+.navbar-icon-link {
+    height: 22px;
+    width: 22px;
+    border-radius: 20px;
+    margin-right: 12px;
+    margin-top: -2px;
+    margin-left: 1px
+}
+
+.navbar-icon {
+    height: 22px;
+    width: 22px;
+    border-radius: 20px;
+    margin-left: 1px;
+    margin-top: 1px;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.nav-auth {
+    font-size: 12pt;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    align-self: center;
+    transition: .3s
+}
+
+.nav-auth:hover {
+    color: rgb(116, 154, 177)
+}
+
+/* posts */
+.postlist-container {
+    margin-top: 30px
+}
+
+.posts {
+    padding-top: 40px
+}
+
+.card {
+    background-color: white;
+    border: solid rgb(224, 224, 224) 1px;
+    max-width: 702px;
+    border-radius: 4px;
+    margin: 10px auto 25px;
+}
+
+.card-user {
+    display: flex;
+    align-items: center;
+    margin: 8px 0 4px 0
+}
+
+.card-user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.card-user-icon-box {
+    margin: 5px 10px;
+}
+
+.card-username-link {
+    text-decoration: none;
+}
+
+.card-username {
+    font-size: 16pt;
+    color: rgb(53, 53, 53);
+    transition: color .3s
+}
+
+.card-username:hover {
+    color: rgb(116, 154, 177)
+}
+
+.card-date {
+    color: rgb(124, 124, 124);
+    font-size: 11pt;
+    position: relative;
+    float: right;
+    margin-top: -42px;
+    margin-right: 10px
+}
+
+.card-image {
+    width: 700px;
+}
+
+.card-votes {
+    margin: 10px 0 -2px 16px
+}
+
+.vote-buttons {
+    margin-left: 14px;
+    margin-top: 6px
+}
+
+.vote-buttons > button:disabled {
+    cursor: default;
+    border: 1px solid #e7e7e7
+}
+
+/* detail */
+.post-detail-container {
+    padding-top: 50px;
+    padding-bottom: 20px
+}
+
+.post-detail {
+    padding-bottom: 14px;
+    width: 702px;
+    margin: auto;
+    background-color: white;
+    border: solid rgb(224, 224, 224) 1px;
+    border-radius: 4px
+}
+
+.detail-top-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px
+}
+
+.detail-user {
+    grid-column: 1 / 2;
+    display: flex;
+    margin-left: 15px
+}
+
+.detail-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.detail-username {
+    font-size: 18pt;
+    color: rgb(53, 53, 53);
+    transition: color .3s;
+    align-self: center;
+    text-decoration: none;
+    margin-left: 10px
+}
+
+.detail-username:hover {
+    color: rgb(116, 154, 177)
+}
+
+.delete-button {
+    width: 120px;
+    height: 26px;
+    font-size: 14px;
+    justify-self: right;
+    align-self: center;
+    margin-right: 15px
+}
+
+.image-flag-container {
+    justify-self: right;
+    margin-right: 8px;
+    margin-top: -16px
+}
+
+.image-flag {
+    text-decoration: none;
+    color: red;
+    font-size: 9pt;
+}
+
+.detail-date {
+    color: rgb(124, 124, 124);
+    font-size: 11pt;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.detail-image {
+    width: 700px;
+}
+
+.detail-image:hover {
+    cursor: zoom-in;
+}
+
+.resize-background {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.detail-image-large-container {
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 156px;
+    width: 98%;
+    left: 1%;
+}
+
+.detail-image-large {
+    width: 100%;
+    z-index: 10;
+    border: solid white 10px;
+    border-radius: 4px;
+}
+
+.detail-image-large:hover {
+    cursor: zoom-out
+}
+
+.detail-votes {
+    margin: 10px 0 0 16px
+}
+
+.detail-description-button {
+    float: right;
+    margin-top: -18px;
+    margin-right: 10px
+}
+
+.detail-description-input {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.detail-save-description {
+    margin-left: 6px;
+    position: absolute;
+    margin-top: 22px;
+    font-size: 11pt;
+    height: 30px;
+    width: 60px
+}
+
+.detail-description {
+    margin: 20px;
+    word-break: break-word
+}
+
+/* comments */
+.comments-box {
+    margin-top: 10px;
+    width: 432px;
+    margin: auto
+}
+
+.comments-title {
+    text-align: center;
+}
+
+.comment-form {
+    margin: 10px
+}
+
+.comment-form-button {
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 10px;
+    height: 26px
+}
+
+.comments-list {
+    margin-top: 10px
+}
+
+.comment {
+    margin-left: 4px;
+    margin: 20px 4px;
+    padding-right: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.comment-user {
+    display: flex;
+    align-items: center;
+    margin-top: -3px
+}
+
+.comment-username {
+    margin-right: 4px;
+    margin-left: -4px
+}
+
+.comment-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 60px;
+    margin-bottom: -5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.comment-username-link {
+    text-decoration: none;
+    margin-left: 5px;
+    color: rgb(53, 53, 53);
+    transition: color .3s
+}
+
+.comment-username-link:hover {
+    color: rgb(116, 154, 177)
+}
+
+.comment > p {
+    margin-left: 6px;
+    overflow: hidden;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.comment-buttons {
+    float: right;
+    margin-right: -56px;
+}
+
+.comment-save-button {
+    height: 18px;
+    margin-top: -9px;
+    margin-left: 26px
+}
+
+.edit-comment-input {
+    width: 90%;
+    margin-top: -9px
+}
+
+/* profile */
+.profile {
+    padding-top: 50px;
+}
+
+.profile-edit-container {
+    width: 702px;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 20px;
+    border: solid rgb(224, 224, 224) 1px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.profile-edit {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.set-profile-pic {
+    grid-column: 1 / 2;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    border-radius: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-pic-input {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: -1;
+}
+
+.label-styling {
+    border-radius: 80px;
+    width: 150px;
+    height: 150px;
+    margin-top: -40px;
+    padding-top: 56px;
+    cursor: pointer;
+    color: transparent;
+    font-size: 13pt;
+    transition: .3s
+}
+
+.size-limit {
+    font-size: 8pt
+}
+
+.label-styling:hover {
+    color: #e5e6e7;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic-input:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.profile-upload-error {
+    color: red;
+    font-size: 9pt;
+    text-align: center;
+    margin-top: -12px
+}
+
+.upload-progress {
+    display: none;
+}
+
+.upload-progress-active {
+    display: block;
+}
+
+.loading-bar-container {
+    height: 20px;
+    border: solid rgb(224, 224, 224) 1px;
+    border-radius: 4px
+}
+
+.loading-bar {
+    color: white;
+    background-color: rgb(116, 154, 177);
+    text-align: center
+}
+
+.profile-edit-text {
+    grid-column: 2 / 3
+}
+
+.profile-username {
+    margin: 16px 0 10px 14px;
+    margin-bottom: 10px
+}
+
+.profile-delete-user-button {
+    float: right;
+    right: 20px;
+    color: red;
+}
+
+.profile-postnum {
+    margin-left: 14px
+}
+
+.profile-bio {
+    margin: 14px 0 10px 14px;
+}
+
+.bio-p {
+    margin-bottom: 10px;
+    border-radius: 4px;
+    word-break: break-word;
+}
+
+.bio-textarea {
+    width: 80%;
+}
+
+.profile-bio-button {
+    width: 80px;
+    float: left;
+}
+
+.set-bio-button {
+    width: 80px;
+    float: left;
+    margin-left: 14px
+}
+
+.profile-post {
+    text-align: center;
+    width: 702px;
+    margin: 14px auto;
+    padding: 20px;
+    border: solid rgb(224, 224, 224) 1px;
+    border-radius: 4px;
+    background-color: white;
+}
+.post-description-textarea {
+    margin-bottom: 8px
+}
+
+.post-submit-button {
+    margin-top: 10px;
+    width: 100px;
+    font-size: 12pt;
+    padding: 6px
+}
+
+.post-submit-button:disabled {
+    cursor: default;
+    border: 1px solid #e7e7e7
+}
+
+/* logged in user posts (my album page) */
+.custom-alert-container {
+    padding-top: 50px;
+    margin-bottom: -40px
+}
+
+.custom-alert {
+    width: 300px;
+    height: 56px;
+    margin: auto;
+    border: solid rgb(224, 224, 224) 1px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: white
+}
+
+.custom-alert > button {
+    height: 26px;
+    width: 26px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 12pt;
+    float: right;
+    margin-top: -18px
+}
+
+.custom-alert > button:hover {
+    cursor: pointer;
+}
+
+.custom-alert > p {
+    margin-left: 26px
+}
+
+.current-user-posts-page {
+    padding-top: 50px;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+}
+
+.current-user-title {
+    margin: 8px 0 14px 0
+}
+
+.user-post-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-column-1 {
+    flex: 50%;
+    max-width: 50%;
+    padding-right: 4px
+}
+
+.post-column-2 {
+    flex: 50%;
+    max-width: 50%;
+    padding-left: 4px
+}
+
+.user-post-img {
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle
+}
+
+.new-image {
+    border: 5px solid blue
+}
+
+/* (other) user page */
+.user-detail {
+    padding-top: 50px;
+}
+
+.user-detail-info {
+    border: solid rgb(224, 224, 224) 1px;
+    border-radius: 4px;
+    background-color: white;
+    width: 702px;
+    margin: auto;
+    margin-bottom: -26px;
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.user-detail-icon {
+    width: 130px;
+    height: 130px;
+    border-radius: 80px;
+    margin: 20px;
+    grid-column: 1 / 2;
+    justify-self: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.user-detail-text {
+    padding: 10px;
+    padding-top: 16px
+}
+
+.user-detail-post-num {
+    margin-top: 10px
+}
+
+.user-posts-bio {
+    margin: 14px 14px 10px 0
+}
+
+.user-detail-date {
+    color: rgb(124, 124, 124);
+    font-size: 11pt;
+    float: right;
+    margin-right: 16px;
+}
+
+.user-detail-album {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: auto;
+}
+
+.toggle-album-button-container {
+    text-align: center;
+    margin-bottom: -30px;
+    margin-top: 46px
+}
+
+.toggle-album-button {
+    width: 100px;
+    height: 30px;
+    font-size: 10pt
+}
+
+.toggle-album-button-active {
+    width: 100px;
+    height: 30px;
+    font-size: 10pt;
+    margin-bottom: 3px;
+    background-color: rgb(116, 154, 177);
+    box-shadow: 2px 2px rgb(182, 182, 182);
+    transform: translateY(2px);
+}
+
+@media only screen and (max-width: 740px){
+    .auth-page {
+        width: 96%
+    }
+
+    .nav {
+        padding: 8px 0
+    }
+
+    .nav-box {
+        width: 96%;
+        padding: 0
+    }
+
+    .nav-user {
+        margin-right: 1px
+    }
+
+    .card-image {
+        max-width: 100%
+    }
+
+    .profile-edit-container {
+        width: 96%
+    }
+
+    .profile-delete-user-button {
+        position: absolute;
+        right: 3%;
+        margin-top: -4px
+    }
+
+    .bio-textarea {
+        width: 96%;
+    }
+
+    .profile-post {
+        width: 96%
+    }
+
+    .current-user-posts-page {
+        width: 98%
+    }
+
+    .post-column-1 {
+        padding-right: 2px
+    }
+    
+    .post-column-2 {
+        padding-left: 2px
+    }
+    
+    .user-post-img {
+        margin-top: 4px
+    }
+
+    .user-detail-info {
+        max-width: 96%
+    }
+
+    .toggle-album-button-active {
+        margin-bottom: 7px
+    }
+
+    .user-detail-album {
+        width: 98%
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .post-detail {
+        width: 100%
+    }
+
+    .detail-image:hover {
+        cursor: default;
+    }
+
+    .detail-image {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .profile-username {
+        font-size: 18pt
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .comment {
+        padding-right: 0;
+    }
+
+    .comment-form {
+        text-align: center;
+        margin-bottom: 0
+    }
+
+    .comment-input {
+        width: 100%;
+        margin: auto;
+        margin-left: -40px
+    }
+
+    .comment-form-button {
+        position: relative;
+        width: 80px;
+        float: left;
+        left: 50%;
+        margin-left: -40px;
+        margin-top: 60px;
+    }
+
+    .comments-box {
+        width: 90%;
+        margin: auto
+    }
+
+    .comments-list {
+        margin-top: 46px
+    }
+
+    .comment-buttons {
+        margin-right: 0;
+        float: right;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .comment-save-button {
+        width: 51px;
+        height: 30px;
+        margin-top: 5px;
+        margin-left: -30px
+    }
+    
+    .edit-comment-input {
+        width: 100%;
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+
+    .profile-username {
+        font-size: 16pt
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .detail-username-text {
+        font-size: 14pt
+    }
+
+    .detail-date {
+        font-size: 9pt
+    }
+
+    .profile-username {
+        font-size: 14pt;
+        margin-top: 22px
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .detail-save-description {
+        display: block;
+        position: relative;
+        margin: 8px auto 16px auto
+    }
+
+    .profile-username {
+        word-break: break-word
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .card-username {
+        font-size: 14pt
+    }
+
+    .user-detail-info {
+        display: block;
+        text-align: center
+    }
+
+    .detail-top-box {
+        display: block
+    }
+
+    .delete-button {
+        float: right;
+        margin: 5px;
+    }
+
+    .image-flag-container {
+        float: right;
+        margin-top: -64px
+    }
+
+    .detail-date {
+        float: left;
+        margin: 10px;
+        margin-top: 12px;
+        margin-left: 20px
+    }
+
+    .detail-icon {
+        height: 50px;
+        width: 50px
+    }
+
+    .user-detail-icon {
+        margin: 10px auto
+    }
+
+    .user-detail-text {
+        padding-top: 0
+    }
+
+    .profile-edit {
+        display: block;
+        text-align: center
+    }
+
+    .set-profile-pic {
+        margin: auto
+    }
+
+    .upload-progress-active {
+        margin-top: 10px
+    }
+
+    .profile-upload-error {
+        margin-top: 4px
+    }
+
+    .profile-username {
+        margin-top: 10px
+    }
+
+    .profile-postnum {
+        margin-left: 0
+    }
+
+    .profile-bio {
+        margin-left: 0
+    }
+
+    .profile-bio-button {
+        float: none
+    }
+
+    .set-bio-button {
+        margin-left: 0;
+        float: none;
+        height: 40px;
+        margin-bottom: 5px
+    }
+
+    .post-form {
+        width: 100%;
+    }
+
+    .image-uploader {
+        width: 90%;
+    }
+
+    .post-description-textarea {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .auth-button {
+        display: block;
+        margin: auto;
+        margin-top: 8px;
+    }
+
+    .card-username {
+        font-size: 13pt
+    }
+
+    .custom-confirm {
+        width: 96%;
+        margin: auto
+    }
+
+    .nav-auth {
+        font-size: 11pt
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .nav-link {
+        font-size: 12pt;
+        margin-right: 26px
+    }
+
+    .nav-user {
+        margin-top: -2px
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .card-date {
+        float: right;
+        margin-bottom: 10px;
+        margin-top: -16px;
+        font-size: 10pt
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .nav-link {
+        margin-right: 16px;
+        font-size: 11pt
+    }
+
+    .nav-auth {
+        font-size: 10pt
+    }
+}
