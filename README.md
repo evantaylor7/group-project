@@ -1,2 +1,1 @@
-# fullstack-ig
-# group-project
+# group-project: full stack photo sharing app using react for frontend and node, express, mongoose, and mongodb for backend
