@@ -19,7 +19,7 @@ const votes = require('./routes/votes');
 const users = require('./routes/users');
 
 const dbURL = 'mongodb://localhost:27017/photo-share'
-const secret = process.env.SECRET || "something wicked this way comes"
+const secret = process.env.SECRET
 
 require('dotenv').config();
 
