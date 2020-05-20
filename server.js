@@ -21,8 +21,6 @@ const users = require('./routes/users');
 const dbURL = 'mongodb://localhost:27017/photo-share'
 const secret = process.env.SECRET
 
-require('dotenv').config();
-
 app.use(express.json())
 app.use(morgan('dev'))
 
