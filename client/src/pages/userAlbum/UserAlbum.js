@@ -8,7 +8,6 @@ const UserAlbum = props => {
         setToggle(true)
     }
 
-    console.log(props)
     return (
         <div className='current-post'>
             {(props.location.state && props.location.state.newImg === 'new') && 
