@@ -1,5 +1,6 @@
 const express = require('express')
 const expressJWT = require('express-jwt');
+// updated express jwt
 const app = express()
 require('dotenv').config()
 const morgan = require('morgan')
