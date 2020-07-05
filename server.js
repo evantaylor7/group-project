@@ -20,10 +20,6 @@ const users = require('./routes/users');
 
 const dbURL = 'mongodb://localhost:27017/photo-share'
 const secret = process.env.SECRET || 'secret local dev pf'
-// jwt({
-//     algorithms: ['RS256'],
-//     secret = process.env.SECRET
-// })
 
 app.use(express.json())
 app.use(morgan('dev'))
@@ -46,7 +42,7 @@ app.use('/auth', auth);
 app.use('/posts', getPosts)
 app.use('/profile', getProfile)
 app.use('/comments', getComments)
-app.use('/api', expressJWT({ secret: secret, algorithms: ['RS256'] }));
+app.use('/api', expressJWT({ secret: secret }));
 app.use('/api/posts', posts);
 app.use('/api/vote', votes);
 app.use('/api/profile', profile)
