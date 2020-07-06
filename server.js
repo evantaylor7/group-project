@@ -42,12 +42,14 @@ app.use('/auth', auth);
 app.use('/posts', getPosts)
 app.use('/profile', getProfile)
 app.use('/comments', getComments)
-app.use('/api', expressJWT({ secret: secret }));
+app.use('/api', expressJWT({ secret, algorithms: ['HS256'] }));
 app.use('/api/posts', posts);
 app.use('/api/vote', votes);
 app.use('/api/profile', profile)
 app.use('/api/comments', comments);
 app.use('/api/users', users);
+
+app.use(express.static(path.join(__dirname, "client", "build")))
 
 app.use((err, req, res, next) => {
     console.log(err)
@@ -56,8 +58,6 @@ app.use((err, req, res, next) => {
     }
     return res.send( { errMsg: err.message } )
 });
-
-app.use(express.static(path.join(__dirname, "client", "build")))
 
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"))
