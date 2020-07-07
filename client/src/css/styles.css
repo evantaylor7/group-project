@@ -15,14 +15,15 @@ body {
 
 .button {
     border-radius: 5px;
+    outline: none;
     background-color: whitesmoke;
-    transition: border .3s;
     border: solid 1px black;
-    outline: none
+    transition: .4s
 }
 
 .button:hover {
     border: solid rgb(112, 112, 112) 1px;
+    background-color: white;
     cursor: pointer
 }
 
@@ -413,10 +414,6 @@ body {
     margin-top: 10px;
     width: 432px;
     margin: auto
-}
-
-.comments-title {
-    text-align: center;
 }
 
 .comment-form {

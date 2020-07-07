@@ -190,7 +190,6 @@ const PostDetail = () => {
                     <p className='detail-description'>{description}</p>
                 }
                 <div className='comments-box'>
-                    <h2 className='comments-title'>Comments</h2>
                     {
                     token &&
                         <CommentForm 
