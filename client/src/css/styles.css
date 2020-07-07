@@ -17,6 +17,7 @@ body {
     border-radius: 5px;
     background-color: whitesmoke;
     transition: border .3s;
+    border: solid 1px black;
     outline: none
 }
 
@@ -417,6 +418,10 @@ body {
     margin: 10px
 }
 
+.comment-input {
+    width: 100%
+}
+
 .comment-form-button {
     position: absolute;
     margin-left: 8px;
@@ -480,9 +485,9 @@ body {
 }
 
 .comment-save-button {
-    height: 18px;
-    margin-top: -9px;
-    margin-left: 26px
+    height: 19px;
+    margin-top: -10px;
+    margin-left: 19px
 }
 
 .edit-comment-input {
