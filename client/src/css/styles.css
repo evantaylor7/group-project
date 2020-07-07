@@ -197,6 +197,11 @@ body {
     max-width: 702px;
     border-radius: 4px;
     margin: 10px auto 25px;
+    transition: .4s
+}
+
+.card:hover {
+    box-shadow: 2px 2px 4px rgb(150, 150, 150)
 }
 
 .card-user {
