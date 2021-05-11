@@ -9,12 +9,13 @@
   "dependencies": {
     "bcrypt": "^5.0.0",
     "bl": "^2.2.1",
+    "bson": "^4.3.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-jwt": "^6.0.0",
     "firebase": "^7.14.3",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.3",
+    "mongoose": "^5.12.8",
     "morgan": "^1.9.1",
     "node": "^13.10.1",
     "nodemon": "^2.0.2"
