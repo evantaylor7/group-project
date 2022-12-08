@@ -16,7 +16,7 @@
     "express-jwt": "^6.0.0",
     "firebase": "^7.14.3",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.8",
+    "mongoose": "^5.13.15",
     "morgan": "^1.9.1",
     "mquery": "^3.2.5",
     "node": "^13.10.1",
