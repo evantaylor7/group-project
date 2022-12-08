@@ -20,7 +20,7 @@
     "morgan": "^1.9.1",
     "mquery": "^3.2.5",
     "node": "^13.10.1",
-    "node-fetch": "^3.1.1",
+    "node-fetch": "^3.2.10",
     "nodemon": "^2.0.20"
   },
   "scripts": {
