@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.2",
     "dotenv": "^8.2.0",
-    "express-jwt": "^5.3.3",
+    "express-jwt": "^6.0.0",
     "firebase": "^7.15.5",
     "mkdirp": "^1.0.3",
     "react": "^16.13.0",
