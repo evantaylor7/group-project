@@ -9,7 +9,7 @@
     "axios": "^1.6.0",
     "dotenv": "^8.2.0",
     "express-jwt": "^8.2.0",
-    "firebase": "^9.17.2",
+    "firebase": "^10.12.2",
     "mkdirp": "^1.0.3",
     "react": "^16.13.0",
     "react-confirm-alert": "^2.6.1",
