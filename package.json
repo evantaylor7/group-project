@@ -7,7 +7,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@grpc/grpc-js": "^1.8.8",
+    "@grpc/grpc-js": "^1.8.22",
     "bcrypt": "^5.1.1",
     "bl": "^2.2.1",
     "bson": "^4.3.0",
